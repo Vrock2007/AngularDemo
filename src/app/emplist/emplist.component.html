@@ -1,0 +1,44 @@
+<h2>Employee List</h2>
+<hr />
+<table>
+  <thead>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Salary</th>
+    <th>Dept</th>
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let emp of emps; let i = index">
+      <tr>
+        <td>{{ emp.id }}</td>
+        <td>{{ emp.name | uppercase }}</td>
+        <td>{{ emp.salary | currency: "INR" }}</td>
+        <td>{{ emp.dept }}</td>
+      </tr>
+    </ng-container>
+  </tbody>
+</table>
+<hr />
+<h2>Date Formatting</h2>
+<p>{{ today }}</p>
+<p>Year: {{ today | date: "yyyy" }}</p>
+<p>Month: {{ today | date: "M" }}</p>
+<p>Day: {{ today | date: "d" }}</p>
+<p>Week of Month: {{ today | date: "W" }}</p>
+<p>{{ today | date: "fullDate" }}</p>
+<p>{{ today | date: "medium" }}</p>
+<p>{{ today | date: "short" }}</p>
+<p>{{ today | date: "hh:mm:ss" }}</p>
+<hr />
+<ol>
+  <li *ngFor="let day of weekdays">
+    <ng-container
+      *ngIf="day == 'Saturday' || day == 'Sunday'; else elseTemplate"
+    >
+      <h4 style="color: rgb(200, 0, 0)">{{ day }} in weekend</h4>
+    </ng-container>
+    <ng-template #elseTemplate>
+      <h4 style="color: blueviolet">{{ day }} is office</h4>
+    </ng-template>
+  </li>
+</ol>

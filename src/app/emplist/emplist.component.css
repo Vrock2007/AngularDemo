@@ -1,0 +1,20 @@
+h1,
+h2 {
+  text-align: center;
+  background-color: rgb(37, 0, 71);
+  color: white;
+}
+table {
+  width: 100%;
+}
+th {
+  background-color: rgb(37, 0, 71);
+  color: white;
+}
+tr {
+  background-color: rgb(114, 96, 229);
+  color: white;
+}
+tr:hover {
+  background-color: rgb(106, 177, 0);
+}
