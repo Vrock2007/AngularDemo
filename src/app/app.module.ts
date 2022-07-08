@@ -9,7 +9,13 @@ import { HomeComponent } from './home/home.component';
 import { AddmovieComponent } from './addmovie/addmovie.component';
 
 @NgModule({
-  declarations: [AppComponent, MycomponentComponent, EmplistComponent, HomeComponent, AddmovieComponent],
+  declarations: [
+    AppComponent,
+    MycomponentComponent,
+    EmplistComponent,
+    HomeComponent,
+    AddmovieComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

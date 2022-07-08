@@ -1,3 +1,4 @@
+import { AddmovieComponent } from './addmovie/addmovie.component';
 import { MycomponentComponent } from './mycomponent/mycomponent.component';
 import { EmplistComponent } from './emplist/emplist.component';
 import { HomeComponent } from './home/home.component';
@@ -8,6 +9,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'mycomponent', component: MycomponentComponent },
   { path: 'employees', component: EmplistComponent },
+  { path: 'addmovie', component: AddmovieComponent },
 ];
 
 @NgModule({

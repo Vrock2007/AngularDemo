@@ -10,9 +10,9 @@
         <input
           type="number"
           id="id"
-          name="id"
-          required[(ngModel)="moviedata.id"
-          #id="ngModel"
+          name="id"           
+          required [(ngModel)]="moviedata.id"
+          #id=ngModel
         />
       </td>
     </tr>
@@ -26,7 +26,7 @@
           name="name"
           id="name"
           [(ngModel)]="moviedata.name"
-          #id="ngModel"
+          #id=ngModel
         />
       </td>
     </tr>
@@ -40,7 +40,7 @@
           id="year"
           name="year"
           [(ngModel)]="moviedata.year"
-          #year="ngModel"
+          #year=ngModel
         />
       </td>
     </tr>
@@ -54,7 +54,7 @@
           id="rating"
           name="rating"
           [(ngModel)]="moviedata.rating"
-          #rating="ngModel"
+          #rating=ngModel
         />
       </td>
     </tr>
