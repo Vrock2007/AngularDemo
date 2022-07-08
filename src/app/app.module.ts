@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { MycomponentComponent } from './mycomponent/mycomponent.component';
 import { EmplistComponent } from './emplist/emplist.component';
 import { HomeComponent } from './home/home.component';
+import { AddmovieComponent } from './addmovie/addmovie.component';
 
 @NgModule({
-  declarations: [AppComponent, MycomponentComponent, EmplistComponent, HomeComponent],
+  declarations: [AppComponent, MycomponentComponent, EmplistComponent, HomeComponent, AddmovieComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

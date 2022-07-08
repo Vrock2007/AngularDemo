@@ -1,0 +1,67 @@
+<h1>Adding Movie Record</h1>
+<hr />
+<form (ngSubmit)="Save(moviedata)" #movieform="ngForm">
+  <table>
+    <tr>
+      <td>
+        <label for="id">ID:</label>
+      </td>
+      <td>
+        <input
+          type="number"
+          id="id"
+          name="id"
+          required[(ngModel)="moviedata.id"
+          #id="ngModel"
+        />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="name">Name:</label>
+      </td>
+      <td>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          [(ngModel)]="moviedata.name"
+          #id="ngModel"
+        />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="year">Year:</label>
+      </td>
+      <td>
+        <input
+          type="number"
+          id="year"
+          name="year"
+          [(ngModel)]="moviedata.year"
+          #year="ngModel"
+        />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="rating">Rating:</label>
+      </td>
+      <td>
+        <input
+          type="number"
+          id="rating"
+          name="rating"
+          [(ngModel)]="moviedata.rating"
+          #rating="ngModel"
+        />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="submit" value="Save" />
+      </td>
+    </tr>
+  </table>
+</form>
