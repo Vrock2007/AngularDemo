@@ -10,10 +10,16 @@
         <input
           type="number"
           id="id"
-          name="id"           
-          required [(ngModel)]="moviedata.id"
-          #id=ngModel
+          name="id"
+          required
+          [(ngModel)]="moviedata.id"
+          #id="ngModel"
         />
+      </td>
+      <td>
+        <div *ngIf="id.invalid && (id.dirty || id.touched)" style="color: red">
+          <div *ngIf="id.errors?.['required']">Id cannot be blank!</div>
+        </div>
       </td>
     </tr>
     <tr>
@@ -26,7 +32,7 @@
           name="name"
           id="name"
           [(ngModel)]="moviedata.name"
-          #id=ngModel
+          #id="ngModel"
         />
       </td>
     </tr>
@@ -40,7 +46,7 @@
           id="year"
           name="year"
           [(ngModel)]="moviedata.year"
-          #year=ngModel
+          #year="ngModel"
         />
       </td>
     </tr>
@@ -54,13 +60,13 @@
           id="rating"
           name="rating"
           [(ngModel)]="moviedata.rating"
-          #rating=ngModel
+          #rating="ngModel"
         />
       </td>
     </tr>
     <tr>
       <td>
-        <input type="submit" value="Save" />
+        <input type="submit" value="Save" [disabled]="!movieform.valid" />
       </td>
     </tr>
   </table>
