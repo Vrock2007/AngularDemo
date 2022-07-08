@@ -7,6 +7,7 @@ import { MycomponentComponent } from './mycomponent/mycomponent.component';
 import { EmplistComponent } from './emplist/emplist.component';
 import { HomeComponent } from './home/home.component';
 import { AddmovieComponent } from './addmovie/addmovie.component';
+import { MovielistComponent } from './movielist/movielist.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { AddmovieComponent } from './addmovie/addmovie.component';
     EmplistComponent,
     HomeComponent,
     AddmovieComponent,
+    MovielistComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
