@@ -1,0 +1,9 @@
+{
+  "movies": [
+    { "id": 1, "name": "War", "year": 2019, "rating": 4 },
+    { "id": 2, "name": "Vikram", "year": 2022, "rating": 4 },
+    { "id": 3, "name": "Ludo", "year": 2020, "rating": 3 },
+    { "id": 4, "name": "Dr.MOM", "year": 2022, "rating": 4 },
+    { "id": 5, "name": "NFS", "year": 2015, "rating": 4 }
+  ]
+}
