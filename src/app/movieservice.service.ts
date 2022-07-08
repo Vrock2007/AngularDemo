@@ -18,7 +18,7 @@ export class MovieserviceService {
     return 'Hello ' + name;
   }
   constructor(private httpClient: HttpClient) {}
-  getmovies(): Observable<Movie[]> {
+  getMovies(): Observable<Movie[]> {
     return this.httpClient.get<Movie[]>(this.url);
   }
 }
